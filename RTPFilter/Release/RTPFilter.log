@@ -1,0 +1,7 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppClean.targets(76,5): warning : 对路径“g:\my projects\vs2017\rtpfilter\release\rtpfilter.dll”的访问被拒绝。
+  stdafx.cpp
+  dllmain.cpp
+  RTPFilter.cpp
+RTPFilter.cpp(197): warning C4244: “参数”: 从“double”转换到“uint32_t”，可能丢失数据
+LINK : warning LNK4044: 无法识别的选项“/wd4430”；已忽略
+LINK : fatal error LNK1104: 无法打开文件“G:\My Projects\VS2017\RTPFilter\Release\RTPFilter.dll”

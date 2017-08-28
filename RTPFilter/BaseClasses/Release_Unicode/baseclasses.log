@@ -1,0 +1,85 @@
+﻿生成启动时间为 2017/8/16 17:30:53。
+     1>项目“G:\Coding\dx9sdk\Samples\C++\DirectShow\BaseClasses\baseclasses.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         G:\Coding\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I. /I..\..\..\..\include /Zi /nologo /W3 /WX- /O2 /Ob1 /Oy- /D NDEBUG /D _MBCS /D _LIB /D _WIN32_DCOM /D WINVER=0x400 /D WIN32 /D UNICODE /D _UNICODE /D UNICODE /GF /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"streams.h" /Fp".\Release_Unicode/baseclasses.pch" /Fo".\Release_Unicode/" /Fd".\Release_Unicode/vc120.pdb" /Gz /TP /analyze- /errorReport:prompt dllentry.cpp
+         dllentry.cpp
+     1>G:\Coding\dx9sdk\include\uuids.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>dllentry.cpp(281): warning C4996: 'GetVersionExW': 被声明为已否决
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\um\sysinfoapi.h(442) : 参见“GetVersionExW”的声明
+         G:\Coding\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I. /I..\..\..\..\include /Zi /nologo /W3 /WX- /O2 /Ob1 /Oy- /D NDEBUG /D _MBCS /D _LIB /D _WIN32_DCOM /D WINVER=0x400 /D WIN32 /D UNICODE /D _UNICODE /D UNICODE /GF /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"streams.h" /Fp".\Release_Unicode/baseclasses.pch" /Fo".\Release_Unicode/" /Fd".\Release_Unicode/vc120.pdb" /Gz /TP /analyze- /errorReport:prompt amextra.cpp amfilter.cpp amvideo.cpp combase.cpp cprop.cpp ctlutil.cpp ddmm.cpp dllsetup.cpp mtype.cpp outputq.cpp pstream.cpp pullpin.cpp refclock.cpp renbase.cpp schedule.cpp seekpt.cpp source.cpp strmctl.cpp sysclock.cpp transfrm.cpp transip.cpp videoctl.cpp vtrans.cpp winctrl.cpp winutil.cpp wxdebug.cpp wxlist.cpp wxutil.cpp
+         amextra.cpp
+         amfilter.cpp
+         amvideo.cpp
+         combase.cpp
+         cprop.cpp
+         ctlutil.cpp
+         ddmm.cpp
+         dllsetup.cpp
+         mtype.cpp
+         outputq.cpp
+         pstream.cpp
+         pullpin.cpp
+         refclock.cpp
+         renbase.cpp
+         schedule.cpp
+         seekpt.cpp
+         source.cpp
+         strmctl.cpp
+         sysclock.cpp
+         transfrm.cpp
+         正在生成代码...
+     1>g:\coding\dx9sdk\samples\c++\directshow\baseclasses\outputq.cpp(665): warning C4700: 使用了未初始化的局部变量“iDone”
+         正在编译...
+         transip.cpp
+         videoctl.cpp
+         vtrans.cpp
+         winctrl.cpp
+         winutil.cpp
+         wxdebug.cpp
+     1>wxdebug.cpp(11): warning C4603: “_WINDLL”: 未定义宏或在预编译头使用后定义发生改变
+                 将宏添加到预编译头中，而不是在此处定义
+                 wxdebug.cpp(13) : 使用预编译头
+     1>G:\Coding\dx9sdk\include\uuids.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         wxlist.cpp
+         wxutil.cpp
+     1>wxutil.cpp(1227): warning C4996: 'GetVersionExW': 被声明为已否决
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\um\sysinfoapi.h(442) : 参见“GetVersionExW”的声明
+         正在生成代码...
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1354,5): warning MSB8012: TargetPath(G:\Coding\dx9sdk\Samples\C++\DirectShow\BaseClasses\.\Release_Unicode\BaseClasses.lib) does not match the Library's OutputFile property value (G:\Coding\dx9sdk\Samples\C++\DirectShow\BaseClasses\Release_Unicode\STRMBASE.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1356,5): warning MSB8012: TargetName(BaseClasses) does not match the Library's OutputFile property value (STRMBASE). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+       Lib:
+         G:\Coding\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"Release_Unicode\STRMBASE.lib" /NOLOGO ..\..\..\..\lib\strmiids.lib  /nodefaultlib  .\Release_Unicode/amextra.obj
+         .\Release_Unicode/amfilter.obj
+         .\Release_Unicode/amvideo.obj
+         .\Release_Unicode/combase.obj
+         .\Release_Unicode/cprop.obj
+         .\Release_Unicode/ctlutil.obj
+         .\Release_Unicode/ddmm.obj
+         .\Release_Unicode/dllentry.obj
+         .\Release_Unicode/dllsetup.obj
+         .\Release_Unicode/mtype.obj
+         .\Release_Unicode/outputq.obj
+         .\Release_Unicode/pstream.obj
+         .\Release_Unicode/pullpin.obj
+         .\Release_Unicode/refclock.obj
+         .\Release_Unicode/renbase.obj
+         .\Release_Unicode/schedule.obj
+         .\Release_Unicode/seekpt.obj
+         .\Release_Unicode/source.obj
+         .\Release_Unicode/strmctl.obj
+         .\Release_Unicode/sysclock.obj
+         .\Release_Unicode/transfrm.obj
+         .\Release_Unicode/transip.obj
+         .\Release_Unicode/videoctl.obj
+         .\Release_Unicode/vtrans.obj
+         .\Release_Unicode/winctrl.obj
+         .\Release_Unicode/winutil.obj
+         .\Release_Unicode/wxdebug.obj
+         .\Release_Unicode/wxlist.obj
+         .\Release_Unicode/wxutil.obj
+         baseclasses.vcxproj -> G:\Coding\dx9sdk\Samples\C++\DirectShow\BaseClasses\.\Release_Unicode\BaseClasses.lib
+     1>已完成生成项目“G:\Coding\dx9sdk\Samples\C++\DirectShow\BaseClasses\baseclasses.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.96
