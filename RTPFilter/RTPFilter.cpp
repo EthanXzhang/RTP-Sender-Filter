@@ -194,7 +194,7 @@ bool RTPFilter::Initjrtp(uint16_t m_portbase, std::string m_destip, uint16_t m_d
 	status = sess.AddDestination(addr);
 	sess.SetDefaultPayloadType(96);//装载类型为96时，为音视频混叠数据，具体见协议
 	sess.SetDefaultMark(false);//设置session的缺省配置，mark为false
-	sess.SetDefaultTimestampIncrement(90000.0 / 25.0); // 时间戳增长速度（一秒25帧，即一次NALU传送后，时间戳增长长度）
+	sess.SetDefaultTimestampIncrement(90000.0 / 30.0); // 时间戳增长速度（一秒25帧，即一次NALU传送后，时间戳增长长度）
 	checkerror(status);
 	// IMPORTANT: The local timestamp unit MUST be set, otherwise
 	//            RTCP Sender Report info will be calculated wrong
@@ -278,7 +278,7 @@ bool RTPFilter::RTPSender(IMediaSample *pMediaSample)
 		nalu_hdr->TYPE = nh.TYPE;
 		nalu_payload = &sendbuf[1];//同理将sendbuf[13]赋给nalu_payload
 		memcpy(nalu_payload, pb, actual_len);//去掉nalu头的nalu剩余内容写入sendbuf[13]开始的字符串。
-		status = sess.SendPacket((void *)sendbuf, actual_len, 96, true, 3600);
+		status = sess.SendPacket((void *)sendbuf, actual_len, 96, true, 3000);
 		//发送RTP格式数据包并指定负载类型为96
 		if (status < 0)
 		{
@@ -356,7 +356,7 @@ bool RTPFilter::RTPSender(IMediaSample *pMediaSample)
 				fu_hdr->E = 1;
 				nalu_payload = &sendbuf[2];//同理将sendbuf[2]地址赋给nalu_payload
 				memcpy(nalu_payload, pb + t*MAX_RTP_PKT_LENGTH , l);//将nalu最后剩余的l-1(去掉了一个字节的NALU头)字节内容写入sendbuf[14]开始的字符串。
-				status = sess.SendPacket((void *)sendbuf, l + 2, 96, true, 3600);
+				status = sess.SendPacket((void *)sendbuf, l + 2, 96, true, 3000);
 				//测试用写入点
 				//FILE *fp;
 				//fp = fopen("G://get.txt", "a+");
@@ -408,8 +408,8 @@ bool RTPFilter::RTPSender(IMediaSample *pMediaSample)
 			}
 		}
 	}	
-	RTPTime delay(0.0015); //发包延迟（用于调整发送速率和帧速率的差异）非必须，请根据自身情况调整
-	RTPTime::Wait(delay);
+	//RTPTime delay(0.0015); //发包延迟（用于调整发送速率和帧速率的差异）非必须，请根据自身情况调整
+	//RTPTime::Wait(delay);
 }
 
 /******************************Public Routine******************************\

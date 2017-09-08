@@ -47,8 +47,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>G:\My Projects\VS2017\RTPFilter\RTPFilter\include\jthread;G:\My Projects\VS2017\RTPFilter\RTPFilter\include\jrtplib3;G:\My Projects\VS2017\RTPFilter\RTPFilter\include;G:\Coding\dx9sdk\Samples\C++\DirectShow\BaseClasses;$(IncludePath)</IncludePath>
-    <LibraryPath>G:\My Projects\VS2017\RTPFilter\RTPFilter\lib;G:\My Projects\VS2017\RTPFilter\RTPFilter\BaseClassesRelease_Unicode;$(LibraryPath)</LibraryPath>
+    <IncludePath>include\jthread;include\jrtplib3;include;G:\Coding\dx9sdk\Samples\C++\DirectShow\BaseClasses;$(IncludePath)</IncludePath>
+    <LibraryPath>lib;BaseClasses\Release_Unicode;$(LibraryPath)</LibraryPath>
     <ExcludePath>c:\program files (x86)\windows kits\8.1\include\um\;$(ExcludePath)</ExcludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">

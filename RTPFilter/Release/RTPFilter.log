@@ -1,7 +1,14 @@
-﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppClean.targets(76,5): warning : 对路径“g:\my projects\vs2017\rtpfilter\release\rtpfilter.dll”的访问被拒绝。
-  stdafx.cpp
+﻿  stdafx.cpp
   dllmain.cpp
   RTPFilter.cpp
 RTPFilter.cpp(197): warning C4244: “参数”: 从“double”转换到“uint32_t”，可能丢失数据
 LINK : warning LNK4044: 无法识别的选项“/wd4430”；已忽略
-LINK : fatal error LNK1104: 无法打开文件“G:\My Projects\VS2017\RTPFilter\Release\RTPFilter.dll”
+     正在创建库 G:\My Projects\VS2017\RTP-Sender-Filter\Release\RTPFilter.lib 和对象 G:\My Projects\VS2017\RTP-Sender-Filter\Release\RTPFilter.exp
+RTPFilter.exp : warning LNK4070: .EXP 中的 /OUT:RTPFilter.ax 指令与输出文件名“G:\My Projects\VS2017\RTP-Sender-Filter\Release\RTPFilter.dll”不同；忽略指令
+LINK : warning LNK4098: 默认库“LIBCMT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+  正在生成代码
+g:\my projects\vs2017\rtp-sender-filter\rtpfilter\rtpfilter.cpp(413): warning C4715: “RTPFilter::RTPSender”: 不是所有的控件路径都返回值
+g:\my projects\vs2017\rtp-sender-filter\rtpfilter\rtpfilter.cpp(204): warning C4715: “RTPFilter::Initjrtp”: 不是所有的控件路径都返回值
+  已完成代码的生成
+RTPFilter.exp : warning LNK4070: .EXP 中的 /OUT:RTPFilter.ax 指令与输出文件名“G:\My Projects\VS2017\RTP-Sender-Filter\Release\RTPFilter.dll”不同；忽略指令
+  RTPFilter.vcxproj -> G:\My Projects\VS2017\RTP-Sender-Filter\Release\RTPFilter.dll
