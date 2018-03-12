@@ -390,11 +390,11 @@ bool RTPFilter::RTPSender(IMediaSample *pMediaSample)
 				memcpy(nalu_payload, pb + t*MAX_RTP_PKT_LENGTH , MAX_RTP_PKT_LENGTH);//去掉起始前缀的nalu剩余内容写入sendbuf[14]开始的字符串。
 				status = sess.SendPacket((void *)sendbuf, MAX_RTP_PKT_LENGTH + 2, 96, false, 0);
 				//测试用写入点
-				//FILE *fp;
-				//fp = fopen("G://get.txt", "a+");
-				//fwrite(sendbuf+2, MAX_RTP_PKT_LENGTH, 1, fp);
-				//fwrite((void*)"\n", 1, 1, fp);
-				//fclose(fp);
+				FILE *fp;
+				fp = fopen("G://get.txt", "a+");
+				fwrite(sendbuf+2, MAX_RTP_PKT_LENGTH, 1, fp);
+				fwrite((void*)"\n", 1, 1, fp);
+				fclose(fp);
 				if (status < 0)
 				{
 					std::cerr << RTPGetErrorString(status) << std::endl;
